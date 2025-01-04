@@ -1,6 +1,7 @@
 def sort_on(dict):
     return dict["num"]
 
+
 def main():
     path_to_file = "books/frankenstein.txt"
     wordctr = 0
@@ -11,7 +12,7 @@ def main():
 
     with open(path_to_file) as f:
         file_contents = f.read()
-        words = file_contents.split() 
+        words = file_contents.split()
         for word in words:
             wordctr += 1
             for c in range(len(word)):
@@ -37,8 +38,8 @@ def main():
     for found in range(len(merge_list)):
         char = merge_list[found]["char"]
         num = merge_list[found]["num"]
-        print(f"The '{char}' character was found {num} times")  
+        print(f"The '{char}' character was found {num} times")
     print("--- End report ---")
-      
-    
+
+
 main()
